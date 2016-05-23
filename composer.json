@@ -24,10 +24,5 @@
     "require": {
         "swiftmailer/swiftmailer": "^5.4",
         "amazonwebservices/aws-sdk-for-php": "~1.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Vokuro\\": "app/library/"
-        }
-    },
+    }
 }
