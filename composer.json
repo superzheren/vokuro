@@ -26,8 +26,8 @@
         "amazonwebservices/aws-sdk-for-php": "~1.0"
     },
     "autoload": {
-        "classmap": [
-            "app/library"    
-        ]
+        "psr-4": {
+            "Vokuro\\": "app/library/"
+        }
     },
 }
