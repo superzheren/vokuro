@@ -27,7 +27,9 @@
     },
     "autoload": {
         "psr-4": {
-            "Vokuro\\": "app/library/"
+            "Vokuro\\": "app/library/",
+            "Vokuro\\Forms\\": "app/forms/",
+            "Vokuro\\Models\\": "app/models/"
         }
     }
 }
