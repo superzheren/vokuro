@@ -121,11 +121,10 @@ class Users extends Model
      */
     public function validation()
     {
-        $this->validate(new Uniqueness(array(
-            "field" => "email",
-            "message" => "The email is already registered"
-        )));
-
+        $validation = new Validation();
+        $validation->add('email', new Validation\Validator\Uniqueness([
+            'message' => 'email must be unique'
+        ]));
         return $this->validationHasFailed() != true;
     }
 
